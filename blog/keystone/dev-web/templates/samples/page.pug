@@ -1,0 +1,79 @@
+extends layout1.pug
+
+block append head
+    script(src='/vendor/three.js')
+    script(src='/game.js')
+
+var title = "On Dogs: Man's best friend";
+var author = "enlore";
+var theGreat = "<span>escape!</span>";
+
+h1 = title
+p Written with love by #{author}
+p This will be safe: #{theGreat}
+
+var msg = "not my inside voice";
+p This is #{msg.toUpperCase()}
+
+//- Mixin is used to create reusable block of code.
+//- Mixin is just a wrapper around proper Pug code.
+//- Mixin can also be a function with arguments.
+mixin notAllowed
+    p: b You are not allowed here
+
+mixin user(data)
+    li
+        p.name= data.name
+        p.city= data.city
+
+//- to use mixin, just use `+` plus operator with mixin name
+.critical-section
+    +notAllowed
+
+-
+    var users = [
+        {name: "Ross Geller", city: "New York"},
+        {name: "Monica Geller", city: "Little Rock"},
+    ]
+ul.user-list
+    for data in users
+        +user(data)
+
+//- Mixin has a internal `block` variable which refers to the content of mixin.
+//- If mixin is used like a tag, then `block` variable will have that content, else it will be empty.
+mixin user(data)
+    li
+        p.name= data.name
+        p.city= data.city
+
+        .meta
+            if block
+                block
+            else
+                p This user has no meta information.
+        
+ul.user-list
+    +user({name: "Ross Geller", city: "New York"})
+        p Ross likes Rachel.
+
+    +user({name: "Monica Geller", city: "Little Rock"})
+        
+//- Mixin has a internal `attributes` variable.
+mixin user(data)
+    li(class!=attributes.class)
+        p.name= data.name
+        p.city= data.city
+
+        .meta
+            if block
+                block
+            else
+                p This user has no meta information.
+        
+ul.user-list
+    +user({name: "Ross Geller", city: "New York"})(class="active")
+        p Ross likes Rachel.
+
+    +user({name: "Monica Geller", city: "Little Rock"})
+
+

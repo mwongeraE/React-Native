@@ -1,0 +1,11 @@
+//- sub-layout.pug
+//- Its possible to ovverride a block to procide additional blocks.
+extends layout.pug
+
+block content
+    .sidebar
+        block sidebar
+            p nothing
+    .primary
+        block primary
+            p nothing

@@ -1,0 +1,31 @@
+// Pug supports 2 primary methods: each and while
+
+// Each
+ul
+    each val in [1, 2, 3, 4, 5]
+        li = val
+
+// You can also get the index as you iterate
+ul
+    each val, index in ['zero', 'one', 'two']
+        li = index + ': ' + val
+
+// Iterate over the keys in an object
+ul
+    each val, index in {1: 'one', 2: 'two', 3: 'three'}
+        li = index + ': ' + val
+
+// The object or array to iterate over could be anything
+// You can also use for as an alias for each
+val values = []
+ul
+    each val in values
+        li = val
+    else
+        li There are no values
+
+// While
+var n = 0;
+ul
+    while n < 4
+        li = n++
