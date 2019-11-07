@@ -1,0 +1,18 @@
+{
+    "name": "my-js-bot",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "http://[::]:3978/api/messages",
+            "id": "3cd77e20-b9b7-11e9-9bfb-f371fec93eae",
+            "name": "http://[::]:3978/api/messages"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "overrides": null,
+    "path": "/home/evans/React/chat/myJSBots/my-js-bot/my-js-bot.bot"
+}

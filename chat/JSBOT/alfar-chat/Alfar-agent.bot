@@ -1,0 +1,18 @@
+{
+    "name": "Alfar-agent",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/messages",
+            "id": "353be6d0-bdb1-11e9-947c-7509a5d0d786",
+            "name": "http://localhost:3978/api/messages"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "overrides": null,
+    "path": "/home/evans/React/chat/JSBOT/alfar-chat/Alfar-agent.bot"
+}

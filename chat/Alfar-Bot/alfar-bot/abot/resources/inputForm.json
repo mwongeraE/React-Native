@@ -1,0 +1,67 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": 2,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Tell us about yourself",
+                            "weigth": "bolder",
+                            "size": "medium"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "We just need a few more details.",
+                            "isSubtitle": true,
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Your name",
+                            "wrap": true
+                        },
+                        {
+                            "type": "Input.Text",
+                            "id": "myName",
+                            "placeholder": "Last, First"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Your email",
+                            "wrap": true
+                        },
+                        {
+                            "type": "Input.Text",
+                            "id": "myEmail",
+                            "placeholder": "youremail@example.com",
+                            "style": "email"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Phone Number"
+                        },
+                        {
+                            "type": "Input.Text",
+                            "id": "myTel",
+                            "placeholder": "xxx.xxx.xxxx",
+                            "style": "tel"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Submit"
+        }
+    ]
+}
