@@ -11,7 +11,7 @@
   "dependencies": {
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
-    "expo": "^33.0.0",
+    "expo": "^46.0.16",
     "mobx": "^5.11.0",
     "mobx-react": "^6.1.1",
     "mobx-state-tree": "^3.14.0",
