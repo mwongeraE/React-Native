@@ -1727,9 +1727,9 @@ decamelize@^1.1.1:
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 dedent@^0.6.0:
   version "0.6.0"
@@ -4441,6 +4441,13 @@ react-native-maps@0.24.2:
   resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.24.2.tgz#19974f967cb0c2e24dab74ca879118e0932571b2"
   integrity sha512-1iNIDikp2dkCG+8DguaEviYZiMSYyvwqYT7pO2YTZvuFRDSc/P9jXMhTUnSh4wNDlEeQ47OJ09l0pwWVBZ7wxg==
 
+react-native-onboarding-swiper@^1.1.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-onboarding-swiper/-/react-native-onboarding-swiper-1.2.0.tgz#4b8dd803ad88bd367e0d9914afddec9c61505946"
+  integrity sha512-UcQ9FTSPG/t12B7dddr62xtA7qHb+MEc/kQnkkUbeWas0+0fQPjTjiFcVZm5LI3CP5X0HVp7U1Rzfrpf3O9lJA==
+  dependencies:
+    tinycolor2 "^1.4.1"
+
 react-native-reanimated@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-1.0.1.tgz#5ecb6a2f6dad0351077ac9b771ca943b7ad6feda"
@@ -5234,6 +5241,11 @@ tiny-queue@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/tiny-queue/-/tiny-queue-0.2.1.tgz#25a67f2c6e253b2ca941977b5ef7442ef97a6046"
   integrity sha1-JaZ/LG4lOyypQZd7XvdELvl6YEY=
+
+tinycolor2@^1.4.1:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.2.tgz#3f6a4d1071ad07676d7fa472e1fac40a719d8803"
+  integrity sha512-vJhccZPs965sV/L2sU4oRQVAos0pQXwsvTLkWYdqJ+a8Q5kPFzJTuOFwy7UniPli44NKQGAglksjvOcpo95aZA==
 
 tmp@^0.0.33:
   version "0.0.33"
